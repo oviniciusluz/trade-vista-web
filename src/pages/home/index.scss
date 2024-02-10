@@ -1,0 +1,63 @@
+@import '@utils/colors.scss';
+
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  background-color: $primary-color;
+  border-radius: 1px 0 0.6rem 0.6rem;
+  height: 120px;
+
+  .top-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    gap: 20px;
+
+    .logo {
+      width: 10%;
+      min-width: 120px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .search-input {
+      width: 40%;
+      height: 35px;
+      border-radius: 3rem;
+      border: 0 none;
+      outline: 0;
+      padding: 0px 10px;
+    }
+  }
+
+  .home-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .nav-link {
+      font-size: 15px;
+      color: $tertiary-color;
+      text-decoration: none;
+      margin: 0 15px;
+
+      &:hover {
+        color: $quinary-color;
+      }
+    }
+  }
+}
+
+.advertisement {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+
+  img {
+    border-radius: 1rem;
+    width: 80%;
+  }
+}
